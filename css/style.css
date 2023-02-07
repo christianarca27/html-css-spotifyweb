@@ -45,8 +45,6 @@ main nav {
 
     color: rgba(255, 255, 255, 0.5);
     font-weight: bold;
-
-    z-index: 1;
 }
 
 main nav #nav-top {
@@ -170,19 +168,19 @@ main nav #nav-bottom hr {
 
 /* main-inner */
 main #main-inner {
+    color: white;
+    /* debug */
     background-color: #141922;
     width: 85%;
     height: 90vh;
     padding-top: 110px;
 
     overflow-y: auto;
-
-    position: relative;
 }
 
 main #main-inner #pro-upgrade {
     background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
+    width: 85%;
     height: 90px;
     padding-right: 10px;
 
@@ -193,7 +191,7 @@ main #main-inner #pro-upgrade {
 
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
 }
 
 main #main-inner #pro-upgrade button {
