@@ -8,6 +8,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
 .row {
     display: flex;
     flex-flow: row nowrap;
@@ -27,23 +32,138 @@ main {
     display: flex;
 }
 /* nav */
+/* nav-top */
 main nav {
-    background-color: darkred;
-    /* debug */
+    background-color: black;
     width: 15%;
     height: 90vh;
+    padding: 20px;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
 }
 
-main nav #nav-logo {
-    background-color: red;
-    width: 100px;
-    height: 50px;
-    /* debug */
+main nav #nav-top {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
 }
+
+main nav #nav-top #nav-logo {
+    height: 40px;
+    width: auto;
+}
+
+main nav #nav-top #nav-links {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+main nav #nav-top #nav-links li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
+}
+
+main nav #nav-top #nav-links li:first-of-type {
+    color: white;
+}
+
+main nav #nav-top #nav-links li img {
+    height: 25px;
+    width: auto;
+
+    filter: invert(0.5);
+}
+
+main nav #nav-top #nav-links li:first-of-type img {
+    filter: invert(0);
+}
+
+main nav #nav-top #playlists h2 {
+    margin-bottom: 15px;
+
+    font-size: 15px;
+    color: white;
+}
+
+main nav #nav-top #playlists ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+main nav #nav-top #playlists ul li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+main nav #nav-top #playlists ul li #add-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 36px;
+    color: black;
+}
+/* /nav-top */
+
+/* nav-bottom */
+main nav #nav-bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+main nav #nav-bottom #download {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+main nav #nav-bottom #download img {
+    height: 25px;
+    width: auto;
+
+    filter: invert(0.5);
+}
+
+main nav #nav-bottom #user {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+main nav #nav-bottom #user #user-picture {
+    background-color: grey;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+main nav #nav-bottom #user #user-name {
+    color: white;
+}
+
+main nav #nav-bottom hr {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+/* /nav-bottom */
 /* /nav */
 
 /* main-inner */
