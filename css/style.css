@@ -7,3 +7,103 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    /* debug */
+}
+
+.col {
+    background-color: yellow;
+    width: calc(100% / 6);
+    height: 200px;
+    /* debug */
+}
+
+/* main */
+main {
+    display: flex;
+}
+/* nav */
+main nav {
+    background-color: darkred;
+    /* debug */
+    width: 15%;
+    height: 90vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+main nav #nav-logo {
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    /* debug */
+}
+/* /nav */
+
+/* main-inner */
+main #main-inner {
+    background-color: darkblue;
+    /* debug */
+    width: 85%;
+    height: 90vh;
+
+    overflow-y: auto;
+}
+
+main #main-inner #pro-upgrade {
+    background-color: darkgray;
+    /* debug */
+    height: 90px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+}
+
+main #main-inner #type-list {
+    background-color: green;
+    /* debug */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+/* /main-inner */
+/* /main */
+
+/* footer */
+footer {
+    background-color: darkgreen;
+    /* debug */
+    height: 10vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+footer #footer-left {
+    background-color: rgb(0, 63, 0);
+    width: 20%;
+    height: 100%;
+    /* debug */
+}
+
+footer #footer-center {
+    background-color: rgb(0, 63, 0);
+    width: 20%;
+    height: 100%;
+    /* debug */
+}
+
+footer #footer-right {
+    background-color: rgb(0, 63, 0);
+    width: 20%;
+    height: 100%;
+    /* debug */
+}
+/* /footer */
