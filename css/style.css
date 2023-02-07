@@ -277,33 +277,119 @@ main #main-inner #most-popular-artists .row .col img {
 
 /* footer */
 footer {
-    background-color: darkgreen;
-    /* debug */
+    background-color: #282828;
     height: 10vh;
+    padding-left: 10px;
+    padding-right: 10px;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+
+    color: white;
+    font-size: 0.8em;
 }
 
 footer #footer-left {
-    background-color: rgb(0, 63, 0);
-    width: 20%;
     height: 100%;
-    /* debug */
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+footer #footer-left img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+footer #footer-left #track-info {
+    margin-right: 40px;
+}
+
+footer #footer-left #track-info h5 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer #footer-left #left-commands {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
 }
 
 footer #footer-center {
-    background-color: rgb(0, 63, 0);
-    width: 20%;
     height: 100%;
-    /* debug */
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer #footer-center #center-commands {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+footer #footer-center #center-commands i {
+    font-size: 20px;
+}
+
+footer #footer-center #center-commands i.fa-circle-play {
+    font-size: 30px;
+}
+
+footer #footer-center #media-player {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+footer #footer-center #media-player #track-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 450px;
+    height: 4px;
+    border-radius: 7px;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+footer #footer-center #media-player #track-bar #track-bar-listened {
+    background-color: #c1c1c1;
+    width: 30%;
+    height: 100%;
+    border-radius: 7px;
 }
 
 footer #footer-right {
-    background-color: rgb(0, 63, 0);
-    width: 20%;
     height: 100%;
-    /* debug */
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+footer #footer-right #volume-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 120px;
+    height: 4px;
+    border-radius: 7px;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+footer #footer-right #volume-bar #volume-bar-active {
+    background-color: #c1c1c1;
+    width: 30%;
+    height: 100%;
+    border-radius: 7px;
 }
 /* /footer */
