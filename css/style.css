@@ -91,7 +91,8 @@ main nav #nav-top #nav-links {
 }
 
 main nav #nav-top #nav-links li {
-    padding: 5px 20px;
+    padding: 5px 15px;
+    border-left: 5px solid transparent;
 
     display: flex;
     flex-flow: row nowrap;
@@ -99,11 +100,8 @@ main nav #nav-top #nav-links li {
     gap: 5px;
 }
 
-main nav #nav-top #nav-links li:first-of-type {
-    padding-left: 15px;
-    border-left: 5px solid #bbeb6e;
-
-    color: white;
+main nav #nav-top #nav-links .active {
+    border-color: #bbeb6e;
 }
 
 main nav #nav-top #nav-links li img {
@@ -263,11 +261,20 @@ main #main-inner #type-list {
     font-weight: bold;
 }
 
-main #main-inner #type-list li {
+main #main-inner #type-list .active {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     gap: 5px;
+}
+
+main #main-inner #type-list .active::after {
+    display: block;
+    content: "";
+    background-color: #bbeb6e;
+    width: 40%;
+    height: 4px;
+    border-radius: 2px;
 }
 
 main #main-inner #recently-played {
