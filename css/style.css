@@ -50,7 +50,9 @@ main nav {
     background-color: black;
     width: 15%;
     height: 90vh;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* padding: 20px; */
 
     display: flex;
     flex-flow: column nowrap;
@@ -67,6 +69,8 @@ main nav #nav-top {
 }
 
 main nav #nav-top #nav-logo {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 main nav #nav-top #nav-links {
@@ -76,6 +80,9 @@ main nav #nav-top #nav-links {
 }
 
 main nav #nav-top #nav-links li {
+    padding-left: 20px;
+    padding-right: 20px;
+
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -99,6 +106,8 @@ main nav #nav-top #nav-links li:first-of-type img {
 
 main nav #nav-top #playlists h2 {
     margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     font-size: 15px;
     color: white;
@@ -111,6 +120,9 @@ main nav #nav-top #playlists ul {
 }
 
 main nav #nav-top #playlists ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -139,6 +151,9 @@ main nav #nav-bottom {
 }
 
 main nav #nav-bottom #download {
+    padding-left: 20px;
+    padding-right: 20px;
+    
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -152,7 +167,15 @@ main nav #nav-bottom #download img {
     filter: invert(0.5);
 }
 
+main nav #nav-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 main nav #nav-bottom #user {
+    padding-left: 20px;
+    padding-right: 20px;
+
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
