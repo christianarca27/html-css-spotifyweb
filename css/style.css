@@ -328,8 +328,6 @@ footer {
 }
 
 footer #footer-left {
-    height: 100%;
-    
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -356,8 +354,6 @@ footer #footer-left #left-commands {
 }
 
 footer #footer-center {
-    height: 100%;
-
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -405,8 +401,6 @@ footer #footer-center #media-player #track-bar #track-bar-listened {
 }
 
 footer #footer-right {
-    height: 100%;
-
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
