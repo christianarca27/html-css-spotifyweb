@@ -70,6 +70,8 @@ main nav {
 
     color: rgba(255, 255, 255, 0.5);
     font-weight: bold;
+
+    overflow-y: auto;
 }
 
 main nav #nav-top {
