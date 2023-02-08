@@ -40,6 +40,13 @@ ul {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.underline {
+    background-color: #bbeb6e;
+    width: 40%;
+    height: 4px;
+    border-radius: 2px;
+}
+
 /* main */
 main {
     display: flex;
@@ -249,6 +256,13 @@ main #main-inner #type-list {
 
     color: rgba(255, 255, 255, 0.5);
     font-weight: bold;
+}
+
+main #main-inner #type-list li {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5px;
 }
 
 main #main-inner #recently-played {
