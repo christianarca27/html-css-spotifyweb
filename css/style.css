@@ -49,14 +49,17 @@ ul {
 
 /* main */
 main {
+    width: 100vw;
+    height: calc(100vh - 100px);
+
     display: flex;
 }
 /* nav */
 /* nav-top */
 main nav {
     background-color: black;
-    width: 15%;
-    height: 90vh;
+    width: 250px;
+    height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     /* padding: 20px; */
@@ -211,8 +214,8 @@ main #main-inner {
     color: white;
     /* debug */
     background-color: #141922;
-    width: 85%;
-    height: 90vh;
+    width: calc(100% - 250px);
+    height: 100%;
     padding-top: 130px;
     padding-left: 30px;
     padding-right: 30px;
@@ -223,7 +226,7 @@ main #main-inner {
 
 main #main-inner #pro-upgrade {
     background-color: rgba(0, 0, 0, 0.8);
-    width: 85%;
+    width: calc(100vw - 250px);
     height: 100px;
     padding-right: 30px;
 
@@ -312,7 +315,7 @@ main #main-inner #most-popular-artists .row .col img {
 /* footer */
 footer {
     background-color: #282828;
-    height: 10vh;
+    height: 100px;
     padding-left: 10px;
     padding-right: 10px;
 
