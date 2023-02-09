@@ -15,12 +15,12 @@ ul {
 
 .row {
     display: flex;
-    flex-flow: row nowrap;
-    gap: 15px;
+    flex-flow: row wrap;
+    gap: 10px;
 }
 
 .row .col {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 10px);
 
     text-align: center;
 }
@@ -102,6 +102,10 @@ main nav #nav-top #nav-links li {
 
 main nav #nav-top #nav-links .active {
     border-color: #bbeb6e;
+}
+
+main nav #nav-top #nav-links #nav-logo-small {
+    display: none;
 }
 
 main nav #nav-top #nav-links li img {
@@ -253,7 +257,7 @@ main #main-inner #type-list {
     margin-bottom: 40px;
 
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 20px;
 
@@ -457,3 +461,84 @@ footer #footer-right #volume-bar #volume-bar-active {
     border-radius: 7px;
 }
 /* /footer */
+
+
+
+
+@media screen and (max-width: 992px) {
+    .row .col {
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row .col {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main nav {
+        width: 50px;
+    }
+
+    main nav #nav-top #nav-logo {
+        display: none;
+    }
+
+    main nav #nav-top #nav-links {
+        align-items: center;
+        gap: 10px;
+    }
+
+    main nav #nav-top #nav-links li {
+        padding: 0;
+        border: none;
+    }
+
+    main nav #nav-top #nav-links #nav-logo-small {
+        display: block;
+    }
+
+    main nav #nav-top #nav-links li span {
+        display: none;
+    }
+
+    main nav #nav-top #playlists {
+        display: none;
+    }
+
+    main nav #nav-bottom {
+        padding: 0;
+
+        align-items: center;
+    }
+
+    main nav #nav-bottom #download {
+        padding: 0;
+    }
+
+    main nav #nav-bottom #download span {
+        display: none;
+    }
+
+    main nav #nav-bottom hr {
+        display: none;
+    }
+
+    main nav #nav-bottom #user {
+        padding: 0;
+    }
+
+    main nav #nav-bottom #user span {
+        display: none;
+    }
+
+    main #main-inner {
+        width: calc(100% - 50px);
+    }
+
+    main #main-inner #pro-upgrade {
+        width: calc(100% - 50px);
+    }
+}
