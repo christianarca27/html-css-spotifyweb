@@ -40,13 +40,6 @@ ul {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.underline {
-    background-color: #bbeb6e;
-    width: 40%;
-    height: 4px;
-    border-radius: 2px;
-}
-
 /* main */
 main {
     width: 100vw;
@@ -265,20 +258,21 @@ main #main-inner #type-list {
     font-weight: bold;
 }
 
-main #main-inner #type-list .active {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 5px;
+main #main-inner #type-list li {
+    position: relative;
 }
 
 main #main-inner #type-list .active::after {
-    display: block;
     content: "";
     background-color: #bbeb6e;
     width: 40%;
     height: 4px;
     border-radius: 2px;
+
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 main #main-inner #recently-played {
